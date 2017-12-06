@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<h1>About this project</h1>
+<p>about page</p>
+
+
+
+<form action="/forward/" method="post">
+<button name="leftBtn" type="submit">left</button>
+</form>
+
+
+<form action="/forward/" method="post">
+<button name="forwardBtn" type="submit">forward</button>
+</form>
+
+
+<form action="/forward/" method="post">
+<button name="backwardBtn" type="submit">back</button>
+</form>
+
+
+<form action="/forward/" method="post">
+<button name="rightBtn" type="submit">right</button>
+</form>
+
+{% endblock %}
