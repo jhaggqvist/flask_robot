@@ -14,6 +14,11 @@ GPIO.output(11, 0)
 GPIO.output(13, 0)
 GPIO.output(15, 0)
 
+def lowAll():
+    GPIO.output(11, 0)
+    GPIO.output(7, 0)
+    GPIO.output(13, 0)
+    GPIO.output(15, 0)
 
 def setup():
     import RPi.GPIO as GPIO #imports gpio library
@@ -35,29 +40,25 @@ def moveForward():
     GPIO.output(11, 1)
     GPIO.output(15, 1)
     sleep(2)
-    GPIO.output(11, 0)
-    GPIO.output(15, 0)
+    lowAll()
 
 def moveBackward():
     setup()
     GPIO.output(7, 1)
     GPIO.output(13, 1)
     sleep(2)
-    GPIO.output(7, 0)
-    GPIO.output(13, 0)
+    lowAll()
 
 def moveLeft():
     setup()
     GPIO.output(7, 1)
     GPIO.output(15, 1)
     sleep(1)
-    GPIO.output(7, 0)
-    GPIO.output(15, 0)
+    lowAll()
 
 def moveRight():
     setup()
     GPIO.output(11, 1)
     GPIO.output(13, 1)
     sleep(1)
-    GPIO.output(11, 0)
-    GPIO.output(13, 0)
+    lowAll()
