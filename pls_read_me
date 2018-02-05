@@ -1,0 +1,8 @@
+This is my flask/hardware/python/web project. 
+
+TODO:
+1. fix confusion in app.py, such as forward function links to backward function because of hardware fault
+2. draw up schematics
+3. add some pretty pictures to the github
+4. maybe remove two second movement and add a stop button(or implement both versions with seperate GUI)
+
